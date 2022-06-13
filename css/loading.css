@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.clearfix:after{content:''; clear:both; display:block;}
+
+.progress-bar{
+  position:relative;
+  width:600px; height:30px;
+  margin:1em auto;
+  
+}
+
+.bar {
+  position:absolute;
+  left:0; top:0px; bottom:0; width:0;
+  
+  
+}
+
+.rate{
+  position:absolute;
+  top:0;bottom:0;right:15px;
+  font-size:1.2em; 
+  line-height:30px;
+}
+/* html */
+.htmlBar>.progress-bar{
+  
+  border:1px solid rgb(217, 61, 0);
+}
+
+.htmlBar .bar {
+ 
+  background:rgb(217, 61, 0);
+}
+
+.htmlBar .rate{
+  color:rgb(217, 61, 0);  
+}
+
+/* css */
+.cssBar>.progress-bar{
+  
+  border:1px solid rgb(0, 121, 227);
+}
+
+.cssBar .bar {
+
+  background:rgb(0, 121, 227);
+}
+
+.cssBar .rate{
+  color:rgb(0, 121, 227);
+ 
+}
+
+/* js */
+.jsBar>.progress-bar{
+   border:1px solid rgb(255, 213, 0);
+}
+
+.jsBar .bar {
+ 
+  background:rgb(255, 213, 0);
+}
+
+.jsBar .rate{
+  
+  font-size:1.2em; color:rgb(255, 213, 0);
+  
+}
+
+/* design */
+.designBar>.progress-bar{
+
+  border:1px solid rgb(255, 190, 120);
+}
+
+.designBar .bar {
+ 
+  background:rgb(255, 190, 120);
+}
+
+.designBar .rate{
+  font-size:1.2em; color:rgb(255, 190, 120);
+  
+}
