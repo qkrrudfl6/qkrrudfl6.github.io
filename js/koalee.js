@@ -96,4 +96,26 @@
    });
 
    
+   // frame image slide
+   var frameH = $('.frame').height();
+  //  var imgH = $('.slideWeb').height();
+  //  var value = imgH - frameH;
+
+   $('.slideWeb').mouseenter(function(){
+    $imgH = $(this).height();
+    $value = $imgH - frameH;
+    $(this).css({transform:"translateY("+(-$value)+"px)"});
+   }).mouseout(function(){
+    $(this).css({transform:"translateY(0)"});
+   });
+
+
+  //  $('.slideWeb').mouseenter(function(){
+  //   $('.slideWeb').animate({transform:translateY(-300+"px")});
+  //   console.log(`마우스엔스터${value}`);
+  //  }).mouseout(function(){
+  //   $('.slideWeb').animate({transform:`translateY(${value}px)`});
+  //   console.log(`마우스리브-${value}px`);
+  //  });
+
 })(jQuery);
