@@ -41,7 +41,7 @@
   tabCon.eq(0).show();
   tabBtn.click(function(e){
     e.preventDefault();
-    $(progressBar).css({width:0});
+    // $(progressBar).css({width:0});
     var target = $(this);
     var index = target.index();
     var $currentTabCon = tabCon.eq(index);
