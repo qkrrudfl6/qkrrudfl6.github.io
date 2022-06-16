@@ -23,18 +23,18 @@ h1>a:hover{color:rgb(255, 190, 120);}
 /* main---------------------------------------------------------------- */
 main{width:100%; padding:100px 0; background-color:#555;}
 
-main h3{font-size:2em; color:#777; margin-bottom:80px; border-bottom: rgb(255, 190, 120) solid 0.1vw;}
+main h3{font-size:2em; color:#777; margin-bottom:12vw; border-bottom: rgb(255, 190, 120) solid 0.1vw;}
 
 /* about-------------------------------------------------------------------------- */
-#resume_area{width:80%; height:2000px; margin:auto; padding:1.5vw 12vw; margin-bottom: 120px; border-radius:5px; background-color:#fff;}
+#resume_area{width:80%; margin:auto; padding:30px 6vw; margin-bottom: 120px; border-radius:5px; background-color:#fff;}
 #resume_area > h2{font-size:2.4em; text-align:center; margin-bottom: 100px;}
 
-#resume_area>ul{width:90%; height:560px; margin:auto; padding:1.6vw;}
-
+#resume_area>ul{width:90%; margin:auto;}
+.profile1{height:900px;}
 .id_picture{float:left; width:30%; border-radius: 50%;}
 .id_picture>.img{width:200px; height:200px; margin:auto; border: 1px solid #555; border-radius: 50%; background-image: url("../img/id_pic.jpg"); background-size :100%;}
 
-.profile{width:50%; margin-bottom:50px; background-color:#fff;}
+
 
 .tab_menu{width:100%;}
 .tab_menu > div{float:left;}
@@ -56,12 +56,7 @@ main h3{font-size:2em; color:#777; margin-bottom:80px; border-bottom: rgb(255, 1
 .resume>ul>li:first-child{float:left; width:30%; font-size: 1.3em; font-weight: bold;}
 .resume>ul>li:last-child{float:right; width:70%; font-size: 1.2em; line-height: 34px; }
 
-#container {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
+
 
 
 /* portfolio-------------------------------------------------------------------------- */
@@ -73,10 +68,11 @@ main h3{font-size:2em; color:#777; margin-bottom:80px; border-bottom: rgb(255, 1
 
 .tab_btn2{width:100%;}
 .tab_btn2>ul{display:flex; width:50%; height:60px; justify-content: space-around; align-items: center; margin:auto;}
-.tab_btn2>ul>li{width:30%; height:100%;}
-.tab_btn2>ul>li>a{display:block; width:100%; height:100%; line-height:2.5; font-size: 1.4em; text-align: center; border-radius:2em; font-weight: bold; background-color: rgb(255, 190, 120);}
-.tab_btn2>ul>li>a:hover{color:#333;}
+.tab_btn2>ul>li{width:30%; height:100%; border-radius:2em; background-color: rgb(255, 190, 120);}
+.tab_btn2>ul>li>a{display:block; display:flex; justify-content: center; align-items: center; width:100%; height:100%;}
 
+.tab_btn2>ul>li>a>span{font-size: 1.9em; font-weight: bold;}
+.tab_btn2>ul>li>a:hover{color:#333;}
 .tab_btn2 li.active a{color:#333;}
 
 .tab_con2{width:75%; height:500px; margin:auto;  box-sizing: border-box; padding-top:40px;}
@@ -106,19 +102,23 @@ main h3{font-size:2em; color:#777; margin-bottom:80px; border-bottom: rgb(255, 1
 /* foot---------------------------------------------------------------- */
 #footBox{ width:100%;  background-color:#555;}
 
-#contact{width:80%; height:400px; margin:auto;  padding:30px 0; border-radius:5px; background-color: #fff; margin-bottom: 100px;}
+#contact{width:80%; height:400px; margin:auto;  padding-top:30px; border-radius:5px; background-color: #fff; margin-bottom: 100px;}
 #contact>h2{font-size:2.4em; text-align:center;}
 
-.info{display:flex; justify-content: space-around; align-items: center; width:100%; height:80%;}
-.info  p {width:220px; text-align: center; font-weight: bold; font-size:1.4em;}
 
-.icon_01{width:200px; height:200px; margin:auto; background-image: url("../img/icon_phone_01.svg"); background-size:cover;}
+
+.info{display:flex; justify-content: space-around; align-items: center; width:100%; height:80%;}
+.info  p {width:13vw; margin:auto; text-align: center; font-weight: bold; font-size:1em;}
+
+.info > li{width:30%; height:250px;}
+
+.icon_01{width:11vw; height:10vw; margin:auto; background-image: url("../img/icon_phone_01.svg"); background-size:cover;}
 .icon_01:hover{background-image: url("../img/icon_phone_02.svg"); background-size:cover;}
 
-.icon_02{width:200px; height:200px; margin:auto; background-image: url("../img/icon_email_01.svg"); background-size:cover;}
+.icon_02{width:11vw; height:10vw; margin:auto; background-image: url("../img/icon_email_01.svg"); background-size:cover;}
 .icon_02:hover{background-image: url("../img/icon_email_02.svg"); background-size:cover;}
 
-.icon_03{width:200px; height:200px; margin:auto; background-image: url("../img/icon_adress_01.svg"); background-size:cover;}
+.icon_03{width:11vw; height:10vw; margin:auto; background-image: url("../img/icon_adress_01.svg"); background-size:cover;}
 .icon_03:hover{background-image: url("../img/icon_adress_02.svg"); background-size:cover;}
 
 .copy{width:100%; height:90px; padding-top:14px; font-size:0.8em; text-align:center; border-top:rgb(255, 190, 120) solid 1px; background-color: #fff;}
