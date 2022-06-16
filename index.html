@@ -11,14 +11,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   
 
+
+<!-- <script src="./js/progress.js"></script> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/base/reset.css">
     <link rel="stylesheet" href="./css/base/common.css">
     <link rel="stylesheet" href="./css/koalee.css">
-    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/jCirclize.css">
+    <!-- <link rel="stylesheet" href="./css/loading.css"> -->
     <link rel="stylesheet" href="./css/responsive.css">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
@@ -31,6 +35,7 @@
       <script src="../ie/PIE/PIR.js"></script>
       <script src="../ie/Respond/dest/respond.min.js"></script>
     <![endif]-->
+<!-- scropt======================================= -->
 
   <title>포트폴리오</title>
 </head>
@@ -98,39 +103,20 @@
             <div class="tab_menu">
               <div class="tab_btn">
                 <ul>
-                  <li class="active"><a href="#">Html</a></li>
-                  <li><a href="#">Css</a></li>
-                  <li><a href="#">JavaScript</a></li>
-                  <li><a href="#">Design Tool</a></li>
+                  <li class="active"><a href="#" data-rate="80">Html</a></li>
+                  <li><a href="#" data-rate="80">Css</a></li>
+                  <li><a href="#" data-rate="70">JavaScript</a></li>
+                  <li><a href="#" data-rate="80">Design Tool</a></li>
                   
                 </ul>
               </div>
-              <div class="tab_con">
-                <div class="htmlBar">
-                  <!-- <div id="container"></div> -->
-                  <div class="progress-bar">
-                    <div class="bar" style="width:80%;"></div>
-                    <div class="rate" data-rate="80">80%</div>
+              <div class="tabBar">
+                <div class="tab_con">
+                  <div class="percent_bar" data-percent="80">
+                  
                   </div>
-                </div>
-                <div class="cssBar">
-                  <div class="progress-bar">
-                    <div class="bar"></div>
-                    <div class="rate" data-rate="80"></div>
-                  </div>
-                </div>
-                <div class="jsBar">
-                  <div class="progress-bar">
-                    <div class="bar"></div>
-                    <div class="rate" data-rate="70"></div>
-                  </div>
-                </div>
-                <div class="designBar">
-                  <div class="progress-bar">
-                    <div class="bar"></div>
-                    <div class="rate" data-rate="90"></div>
-                  </div>
-                </div>
+              </div>
+              
                 
               </div>
             </div>
@@ -264,7 +250,7 @@
           </li>
           <li class="mail">
             <div class="icon_02"></div>
-          <p>qkrrudfl6@gmail.com</p>
+            <p>qkrrudfl6@gmail.com</p>
           </li>
           <li class="adress">
             <div class="icon_03"></div>
@@ -282,11 +268,10 @@
       
     </footer>
   </div>
-  <!-- scropt======================================= -->
-    <script src="./js/base/jquery-3.4.1.min.js"></script>
-    <script src="./js/base/jquery-ui.min.js"></script>
-    <script src="./js/koalee.js"></script>
-    <script src="./js/progress.js"></script>
+  <script src="./js/base/jquery.3.6.0.js"></script>
+<script src="./js/base/jquery-ui.min.js"></script>
+<script src="./js/jquery.jCirclize.js"></script>
+<script src="./js/koalee.js"></script>
 
 
 </body>

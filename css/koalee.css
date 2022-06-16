@@ -29,8 +29,10 @@ main h3{font-size:2em; color:#777; margin-bottom:12vw; border-bottom: rgb(255, 1
 #resume_area{width:80%; margin:auto; padding:30px 6vw; margin-bottom: 120px; border-radius:5px; background-color:#fff;}
 #resume_area > h2{font-size:2.4em; text-align:center; margin-bottom: 100px;}
 
-#resume_area>ul{width:90%; margin:auto;}
-.profile1{height:900px;}
+#resume_area>ul{width:90%; height:800px; margin:auto;}
+
+
+
 .id_picture{float:left; width:30%; border-radius: 50%;}
 .id_picture>.img{width:200px; height:200px; margin:auto; border: 1px solid #555; border-radius: 50%; background-image: url("../img/id_pic.jpg"); background-size :100%;}
 
@@ -45,10 +47,11 @@ main h3{font-size:2em; color:#777; margin-bottom:12vw; border-bottom: rgb(255, 1
 .tab_btn li a{display:block; width:100%; height:100%; font-weight: bold; font-size: 1.4em;}
 .tab_btn li.active a{border-bottom:0.1em solid rgb(255, 190, 120); border-top:0.1em solid rgb(255, 190, 120); font-size: 1.6em; color:rgb(255, 190, 120);}
 
-.tab_con{width:80%; }
-.tab_con>div{width:100%; height:280px;}
+.tabBar{width:80%; }
+.tabBar>div{width:100%; height:280px;}
 
-
+.progressBar{width:100%;}
+.bar{width:40%; height:100%; background-color: #777;}
 
 .resume{float:right; width:50%;}
 .resume>ul{ width: 100%; height:45px;}

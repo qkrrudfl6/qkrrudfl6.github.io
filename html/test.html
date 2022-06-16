@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/jCirclize.css">
+    <script src="../js/base/jquery.3.6.0.js"></script>
+    <script src="../js/jquery.jCirclize.js"></script>
+   
+    <script src="../js/base/jquery-ui.min.js"></script>
+
     <style>
         .monitor {width: 500px; height:500px; border:10px solid #222; margin:0 auto; position: relative; overflow: hidden;}
         .monitor_img {position: absolute; width: 100%; transition: all 3s; transform: translateY(0); height:2000px; background: linear-gradient(to bottom, blue, red);}
@@ -12,12 +18,25 @@
    </style>
 </head>
 <body>
-    <div class="monitor">
-        <div class="monitor_img">
-
-        </div>
+  
+    <div id="example" style="width: 500px; height:500px;" data-percent="50">
+z
     </div>
     <script>
+        $(document).ready(function(){
+            
+            $('#example').circlize({
+		  percentage: 50,
+          perc: 50,
+
+	    usePercentage: true,
+	   	duration:600,
+	    background: "#E3E3E3",
+	    gradientColors: ["#5B89FF", "#5B89FF", "#5B89FF"]
+	    
+	    
+	  });
+        })
 
     </script>
 </body>

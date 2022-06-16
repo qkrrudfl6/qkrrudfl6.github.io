@@ -34,48 +34,32 @@
 
 
  //tabmenu
- var tabBtn = $(".tab_btn > ul > li");
- var tabCon = $(".tab_con > div");
-
-  tabCon.hide();
-  tabCon.eq(0).show();
-  tabBtn.click(function(e){
+  
+// 프로그레스바
+$(document).ready(function(){
+  const tabMenu = $(".tab_btn > ul > li");
+  $(tabMenu).click(function(e){
     e.preventDefault();
-    // $(progressBar).css({width:0});
-    var target = $(this);
-    var index = target.index();
-    var $currentTabCon = tabCon.eq(index);
-    var $currentRate = $currentTabCon.find("div.rate").data("rate");
-  
-    tabBtn.removeClass("active");  // 모든 li의 active클래스 초기화
-    target.addClass("active"); // 클릭된 ul li에 active클래스 추가
-    tabCon.css("display","none"); // tab_con div의 display:none;
-    $currentTabCon.css("display","block"); // 선택된 tab_con > div에 display:block
-    $(progressBar[index]).stop().animate({width:$currentRate+'%'},1500);
-   
-    textAnimation(index, $currentRate);
+    $(".percent_bar").remove();
+    $(".tab_con").append("<div class ='percent_bar'></div>");
+   var $currentMenu = e.target;
+   var  $currentRate = $($currentMenu).data("rate");
+   setPerc($currentRate);
   });
-  
-  function textAnimation(index, $currentRate){
 
-    $({ val : 0 }).animate({ val : $currentRate }, {
-      duration: 1500,
-      step: function() {
-        var num = numberWithCommas(Math.floor(this.val));
-        $(progressText[index]).text(1+parseInt(num)+"%");
-      },
-      complete: function() {
-        var num = numberWithCommas(Math.floor(this.val));
-        $(".count_num").text(num+"%");
-      }
-    });
-    
+  const setPerc = ($currentRate)=>{
+    $('.percent_bar').circlize({
+    percentage:80,
+   perc: 50,
+    usePercentage: true,
+   duration:600,
+    background: "#E3E3E3",
+    gradientColors: ["#5B89FF", "#5B89FF", "#5B89FF"]
+  });
   }
-
-  function numberWithCommas(x) {
-    return x.toString();
-}
-  
+  setPerc();
+})
+// 프로그레스바 끝
    //tabmenu2
    var tabBtn2 = $(".tab_btn2 > ul > li");
    var tabCon2 = $(".tab_con2 > div");

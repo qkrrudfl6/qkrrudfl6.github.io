@@ -20,13 +20,16 @@
   .navBox{top:0}
  
   #resume_area{padding:50px 0;}
-  .profile{width:100%; height:auto; padding:0; font-size: 1em; }
+  .profile{width:100%; height:auto; box-sizing: border-box; padding-bottom:80px; font-size: 1em; }
   .profile:first-child >li{height:900px;}
   .profile>li{width:100%; height:auto; margin:0;}
 
 .tab_btn{width:100%;}
 .tab_btn>ul{width:100%;}
-.tab_btn>ul>li{float:left;width:25%}
+.tab_btn>ul>li{float: left;
+  width: 50%;
+  font-size: 0.6rem;
+  text-align: center;}
 
   
 .id_picture{
