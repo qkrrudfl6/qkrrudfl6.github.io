@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 .canvasized{
 	display: inline-grid;
 	grid-template-columns: 100%;
@@ -8,6 +8,7 @@
 .circle{
 	grid-row: 1;
 	grid-column: 1;
+	width:100%;
 }
 .circle:first-child{
 	z-index: 2;

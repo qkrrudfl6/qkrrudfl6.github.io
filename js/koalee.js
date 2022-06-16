@@ -36,29 +36,7 @@
  //tabmenu
   
 // 프로그레스바
-$(document).ready(function(){
-  const tabMenu = $(".tab_btn > ul > li");
-  $(tabMenu).click(function(e){
-    e.preventDefault();
-    $(".percent_bar").remove();
-    $(".tab_con").append("<div class ='percent_bar'></div>");
-   var $currentMenu = e.target;
-   var  $currentRate = $($currentMenu).data("rate");
-   setPerc($currentRate);
-  });
 
-  const setPerc = ($currentRate)=>{
-    $('.percent_bar').circlize({
-    percentage:80,
-   perc: 50,
-    usePercentage: true,
-   duration:600,
-    background: "#E3E3E3",
-    gradientColors: ["#5B89FF", "#5B89FF", "#5B89FF"]
-  });
-  }
-  setPerc();
-})
 // 프로그레스바 끝
    //tabmenu2
    var tabBtn2 = $(".tab_btn2 > ul > li");

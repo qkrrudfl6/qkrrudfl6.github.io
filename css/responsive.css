@@ -3,7 +3,7 @@
   .nav{display:none;}
   .banner{display: none;}
   .tab_btn>ul>li{float:left;}
-  
+  #contentBox{padding-top:130px;}
   nav.mo{
     display:flex; 
     justify-content: space-around; 
@@ -20,18 +20,21 @@
   .navBox{top:0}
  
   #resume_area{padding:50px 0;}
+  #resume_area>ul.profile1{height:900px;}
+  #resume_area>ul.profile2{height:550px;}
+  #resume_area>ul.profile3{height:400px;}
   .profile{width:100%; height:auto; box-sizing: border-box; padding-bottom:80px; font-size: 1em; }
-  .profile:first-child >li{height:900px;}
+  .profile:first-child >li{height:1000px;}
   .profile>li{width:100%; height:auto; margin:0;}
+
 
 .tab_btn{width:100%;}
 .tab_btn>ul{width:100%;}
-.tab_btn>ul>li{float: left;
-  width: 50%;
-  font-size: 0.6rem;
-  text-align: center;}
+.tab_btn>ul>li{float: left;  width: 50%;  font-size: 0.6rem;  text-align: center;}
 
+.tabBar{width:100%;}
   
+
 .id_picture{
   float:none;
   width:100%;
@@ -50,7 +53,7 @@
 
 .textBox_p{width:100%; height:150px; font-size: 0.9em;}
 
-#portfolio{height:auto;}
+#portfolio{height:auto; padding-top:30px; box-sizing: border-box;}
 #portfolio>h2{margin-bottom: 40px;}
 .tab_menu > div{float:none;}
 .tab_menu2{height:100%;}
@@ -63,11 +66,11 @@
 .tab_con2>div>.con_a>.text{display:none;}
 .tab_con2>div>.con_a>.frame{float:none; width:100%; height:200px;}
 
-
-
-.info>li>div{width:60px;}
-
-
+#contact>h2{margin-bottom: 40px;}
+.info{display:block;}
+.info>li{display:flex; justify-items: center; align-items: center;  width:100%; height:90px;}
+.info>li>div{width:30%; height:100%; margin:0;}
+.info>li>p{width:70%; margin:0; font-size: 1em;}
 }
 
 /* @media screen and (min-width:768px) and (max-width:1024) {
