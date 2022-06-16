@@ -72,7 +72,13 @@
 .info>li>div{width:30%; height:100%; margin:0;}
 .info>li>p{width:70%; margin:0; font-size: 1em;}
 }
+/* 1024-------------------------------------------------------------------------------------------------------- */
+ @media screen and (min-width:768px) and (max-width:1024px) {
 
-/* @media screen and (min-width:768px) and (max-width:1024) {
+  #portfolio{height:auto; padding-top:30px; box-sizing: border-box;}
+  #portfolio>h2{margin-bottom: 40px;}
+  
+  .tab_btn2>ul>li>a>span{font-size: 1.3em;}
 
-} */
+  
+}
