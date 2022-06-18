@@ -103,17 +103,17 @@
             <div class="tab_menu">
               <div class="tab_btn">
                 <ul>
-                  <li class="active"><a href="#" data-rate="80">Html</a></li>
-                  <li><a href="#" data-rate="80">Css</a></li>
-                  <li><a href="#" data-rate="70">JavaScript</a></li>
-                  <li><a href="#" data-rate="80">Design Tool</a></li>
+                  <li class="active"><a href="#" data-color="#f32" data-rate="80">Html</a></li>
+                  <li><a href="#" data-color="#07f" data-rate="80">Css</a></li>
+                  <li><a href="#" data-color="#fd0" data-rate="70">JavaScript</a></li>
+                  <li><a href="#" data-color="#f35" data-rate="90">Design Tool</a></li>
                   
                 </ul>
               </div>
               <div class="tabBar">
                 <div class="tab_con">
+                  <div class="textBox_s"></div>
                   <div class="percent_bar" data-percent="80">
-                  
                   </div>
               </div>
               
@@ -273,30 +273,7 @@
 <script src="./js/jquery.jCirclize.js"></script>
 <script src="./js/koalee.js"></script>
 <script>
-  $(document).ready(function(){
-  const tabMenu = $(".tab_btn > ul > li");
-  $(tabMenu).click(function(e){
-    e.preventDefault();
-    $(".percent_bar").remove();
-    $(".tab_con").append("<div class ='percent_bar'></div>");
-   var $currentMenu = e.target;
-   var $currentRate = $($currentMenu).data("rate");
-           
-   setPerc($currentRate);
-  });
-
-  const setPerc = ($currentRate)=>{
-    $('.percent_bar').circlize({
-    percentage:80,
-    perc: 50,
-    usePercentage: true,
-    duration:600,
-    background: "#E3E3E3",
-    gradientColors: ["#5B89FF", "#5B89FF", "#5B89FF"]
-  });
-  }
-  setPerc();
-})
+ 
 </script>
 
 </body>

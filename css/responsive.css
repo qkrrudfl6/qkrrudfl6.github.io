@@ -1,4 +1,4 @@
-@media screen and (max-width:767px) {
+@media screen and (max-width:769px) {
   .hamberger{display:block;}
   .nav{display:none;}
   .banner{display: none;}
@@ -33,7 +33,7 @@
 .tab_btn>ul>li{float: left;  width: 50%;  font-size: 0.6rem;  text-align: center;}
 
 .tabBar{width:100%;}
-  
+.textBox_s{display: none;}  
 
 .id_picture{
   float:none;
@@ -66,6 +66,8 @@
 .tab_con2>div>.con_a>.text{display:none;}
 .tab_con2>div>.con_a>.frame{float:none; width:100%; height:200px;}
 
+.profile3>li{margin-bottom:50px;}
+
 #contact>h2{margin-bottom: 40px;}
 .info{display:block;}
 .info>li{display:flex; justify-items: center; align-items: center;  width:100%; height:90px;}
@@ -73,12 +75,32 @@
 .info>li>p{width:70%; margin:0; font-size: 1em;}
 }
 /* 1024-------------------------------------------------------------------------------------------------------- */
- @media screen and (min-width:768px) and (max-width:1024px) {
+ @media screen and (min-width:769px) and (max-width:1024px) {
+
+  .tab_btn{width:100%;}
+  .tab_btn>ul{width:100%;}
+  .tab_btn>ul>li{float: left;  width: 50%;  font-size: 0.6rem;  text-align: center;}
+
 
   #portfolio{height:auto; padding-top:30px; box-sizing: border-box;}
   #portfolio>h2{margin-bottom: 40px;}
-  
-  .tab_btn2>ul>li>a>span{font-size: 1.3em;}
+  .tab_menu > div{float:none;}
+  .tab_menu2{height:100%;}
+  .tab_con2{height:100%; padding:0;}
+  .tab_btn2>ul{width:100%;}
+  .tab_btn2>ul>li{width:31%; height:50px;}
+  .tab_btn2>ul>li>a>span{font-size: 1.1em;}
+  .tab_con2>div{height:100%;}
+  .tab_con2>div>.con_a{height:100%; padding: 20px 0;}
+  .tab_con2>div>.con_a>.text{display:none;}
+  .tab_con2>div>.con_a>.frame{float:none; width:100%; height:200px;}
 
-  
+  .tab_btn2>ul>li>a>span{font-size: 1.3em;}
+  .textBox_s{display: none;} 
+
+ #contact>h2{margin-bottom: 40px;}
+.info{display:block;}
+.info>li{display:flex; justify-items: center; align-items: center;  width:100%; height:90px;}
+.info>li>div{width:30%; height:100%; margin:0;}
+.info>li>p{width:70%; margin:0; font-size: 1em;}
 }

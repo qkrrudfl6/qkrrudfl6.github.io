@@ -80,4 +80,36 @@
   //   console.log(`마우스리브-${value}px`);
   //  });
 
+   $(document).ready(function(){
+  const tabMenu = $(".tab_btn > ul > li");
+
+
+  $(tabMenu).click(function(e){
+    e.preventDefault();
+
+    $(".tab_btn > ul > li").removeClass("active");
+    $(this).addClass("active");
+
+    $(".percent_bar").remove();
+    $(".tab_con").append("<div class ='percent_bar'></div>");
+   var $currentMenu = e.target;
+   var $currentRate = $($currentMenu).data("rate");
+           
+   var $currentColor = $($currentMenu).data("color");
+
+   setPerc($currentRate, $currentColor);
+  });
+
+  const setPerc = ($currentRate, $currentColor)=>{
+    $('.percent_bar').circlize({
+    percentage:$currentRate,
+    perc: 50,
+    usePercentage: true,
+    duration:800,
+    background: "#444",
+    gradientColors: [$currentColor, $currentColor, $currentColor]
+  });
+  }
+  setPerc(80,"#f32");
+})
 })(jQuery);
