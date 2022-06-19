@@ -19,10 +19,8 @@
 
   .navBox{top:0}
  
-  #resume_area{padding:50px 0;}
-  #resume_area>ul.profile1{height:900px;}
-  #resume_area>ul.profile2{height:550px;}
-  #resume_area>ul.profile3{height:400px;}
+  #resume_area{padding:20px 10px;}
+ 
   .profile{width:100%; height:auto; box-sizing: border-box; padding-bottom:80px; font-size: 1em; }
   .profile:first-child >li{height:1000px;}
   .profile>li{width:100%; height:auto; margin:0;}
@@ -35,23 +33,19 @@
 .tabBar{width:100%;}
 .textBox_s{display: none;}  
 
-.id_picture{
-  float:none;
-  width:100%;
-  margin-bottom:50px;
-}
-.resume{
-  float:none;
-  width:100%;
-  height:auto;
-}
-.resume>ul{height:90px;}
-.resume>ul>li:first-child{float:none; margin-bottom:8px;}
-.resume>ul>li:last-child{float:none;}
+
+.id_picture{float:none; width:100%; height:300px;}
+.id_picture>img{width:100px; height:100px;}
+.id_picture>div{width:50%; height:200px;}
+.education{float:none; width:100%; height:400px;}
+
+
+.tab_con{display:flex; justify-content: center; align-items: center; width:100%;}
 
 
 
-.textBox_p{width:100%; height:150px; font-size: 0.9em;}
+
+.textBox_p{width:100%; font-size: 0.9em;}
 
 #portfolio{height:auto; padding-top:30px; box-sizing: border-box;}
 #portfolio>h2{margin-bottom: 40px;}
@@ -77,6 +71,11 @@
 /* 1024-------------------------------------------------------------------------------------------------------- */
  @media screen and (min-width:769px) and (max-width:1024px) {
 
+
+  .id_picture{float:none; width:100%; height:200px;}
+  .education{float:none; width:100%; height:400px;}
+  
+
   .tab_btn{width:100%;}
   .tab_btn>ul{width:100%;}
   .tab_btn>ul>li{float: left;  width: 50%;  font-size: 0.6rem;  text-align: center;}
@@ -96,11 +95,32 @@
   .tab_con2>div>.con_a>.frame{float:none; width:100%; height:200px;}
 
   .tab_btn2>ul>li>a>span{font-size: 1.3em;}
-  .textBox_s{display: none;} 
+  .tabBar{width:100%;}
+  .tab_con{display:flex; justify-content: center; align-items: center; width:100%;}
+
+  .textBox_s{display: none;}
+
 
  #contact>h2{margin-bottom: 40px;}
 .info{display:block;}
 .info>li{display:flex; justify-items: center; align-items: center;  width:100%; height:90px;}
 .info>li>div{width:30%; height:100%; margin:0;}
 .info>li>p{width:70%; margin:0; font-size: 1em;}
+}
+
+@media screen and (min-width:1024px) and (max-width:1253px) {
+
+  .id_picture{float:none; width:100%; height:200px;}
+  .education{float:none; width:100%; height:400px;}
+  
+
+  .tab_btn{width:100%;}
+  .tab_btn>ul{width:100%;}
+  .tab_btn>ul>li{float: left;  width: 50%;  font-size: 0.6rem;  text-align: center;}
+
+  .tabBar{width:100%;}
+  .tab_con{display:flex; justify-content: center; align-items: center; width:100%;}
+
+  .textBox_s{display: none;}
+
 }

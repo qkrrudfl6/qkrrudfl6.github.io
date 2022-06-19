@@ -23,19 +23,34 @@ h1>a:hover{color:rgb(255, 190, 120);}
 /* main---------------------------------------------------------------- */
 main{width:100%; padding:100px 0; background-color:#555;}
 
-main h3{font-size:2em; color:#777; margin-bottom:12vw; border-bottom: rgb(255, 190, 120) solid 0.1vw;}
+main h3{font-size:2em; color:#777; margin-bottom:7vw; border-bottom: rgb(255, 190, 120) solid 0.1vw;}
 
 /* about-------------------------------------------------------------------------- */
 #resume_area{width:80%; margin:auto; padding:30px 6vw; margin-bottom: 120px; border-radius:5px; background-color:#fff;}
 #resume_area > h2{font-size:2.4em; text-align:center; margin-bottom: 100px;}
 
-#resume_area>ul{width:90%; height:800px; margin:auto;}
+.profile{width:80%; height:800px; margin:auto;}
 
 
 
-.id_picture{float:left; width:30%; border-radius: 50%;}
-.id_picture>.img{width:200px; height:200px; margin:auto; border: 1px solid #555; border-radius: 50%; background-image: url("../img/id_pic.jpg"); background-size :100%;}
+.id_picture{float:left; width:50%; height:45%; border-radius: 50%;}
 
+.id_picture>div{ float:left;}
+.id_picture>.img{ width:120px; height:120px; border: 1px solid #555; border-radius: 50%; background-image: url("../img/id_pic.jpg"); background-size :100%;}
+
+.resume{ width:50%; height:100%; box-sizing: border-box; margin-left:10px;}
+.resume>ul{ width: 100%; box-sizing: border-box; padding-top:10px;}
+
+.resume>ul>li{width:100%; height: 30px; font-size: 1em; color:#333;}
+
+
+.education{float:left; width:40%; box-sizing: border-box; }
+.education>li:last-child{margin:0;}
+.textBox_p{margin-bottom:70px;}
+
+.date{font-size:0.8em; font-weight: bold; color:#999; margin-bottom:5px;}
+.subject{font-size:1em; font-weight: bold; color:#000;}
+.subject>span{color:#999;}
 
 
 .tab_menu{width:100%;}
@@ -45,22 +60,18 @@ main h3{font-size:2em; color:#777; margin-bottom:12vw; border-bottom: rgb(255, 1
 .tab_btn ul{overflow: hidden; width:100%;}
 .tab_btn li{width:150px; height:70px; line-height:60px;}
 .tab_btn li a{display:block; width:100%; height:100%; font-weight: bold; font-size: 1.4em;}
-.tab_btn li.active a{border-bottom:0.1em solid rgb(255, 190, 120); border-top:0.1em solid rgb(255, 190, 120); font-size: 1.6em; color:rgb(255, 190, 120);}
+.tab_btn li.active a{border-bottom:0.1em solid rgb(255, 190, 120); border-top:0.1em solid rgb(255, 190, 120); font-size: 1.6em; color:rgb(240, 151, 56);}
 
 .tabBar{width:80%; }
 .tabBar>div{width:100%; height:280px;}
 
+.tab_con{display:flex; justify-content: center; align-items: center; width:100%;}
 .tab_con{width:50%;padding:20 20px; box-sizing: border-box;}
 .tab_con>div{float:left;}
 .textBox_s{width:40%;height:100%;}
 
 .percent_bar{width:50%; height:100%;}
 
-.resume{float:right; width:50%;}
-.resume>ul{ width: 100%; height:45px;}
-.resume>ul>li{color:#333;}
-.resume>ul>li:first-child{float:left; width:30%; font-size: 1.3em; font-weight: bold;}
-.resume>ul>li:last-child{float:right; width:70%; font-size: 1.2em; line-height: 34px; }
 
 
 
@@ -69,7 +80,7 @@ main h3{font-size:2em; color:#777; margin-bottom:12vw; border-bottom: rgb(255, 1
 #portfolio{width:80%; height:900px; margin:auto;  padding:1.5vw; border-radius:5px; background-color:#fff;}
 #portfolio > h2{font-size:2.4em; text-align:center; margin-bottom: 100px;}
 
-.textBox_p{margin-left:0.2vw; margin-bottom:70px;}
+
 .tab_menu2{width:100%;}
 
 .tab_btn2{width:100%;}
@@ -86,9 +97,7 @@ main h3{font-size:2em; color:#777; margin-bottom:12vw; border-bottom: rgb(255, 1
 .daBox{width:100%; height:500px; }
 .loBox{width:100%; height:500px; background-color: rgb(122, 26, 122);}
 
-.date{font-size:1em; font-weight: bold; color:#999;margin-bottom:5px;}
-.subject{font-size:1.2em; font-weight: bold; color:#000;}
-.subject>span{color:#999;}
+
 
 .con_a{width:100%; height:500px; box-sizing: border-box; padding:40px 0;}
 .con_a > li{float:left; }
@@ -100,8 +109,6 @@ main h3{font-size:2em; color:#777; margin-bottom:12vw; border-bottom: rgb(255, 1
 .con_a > frame > a{display:block; width:100%; height:100%;}
 .frame > a > img{position: absolute; width:100%; transition:all 4s; transform:translateY(0);}
 
-
-/* con_a1============================================== */
 
 
 

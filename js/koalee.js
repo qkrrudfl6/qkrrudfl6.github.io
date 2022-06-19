@@ -106,10 +106,10 @@
     perc: 50,
     usePercentage: true,
     duration:800,
-    background: "#444",
+    background: "#666",
     gradientColors: [$currentColor, $currentColor, $currentColor]
   });
   }
-  setPerc(80,"#f32");
+  setPerc(80,"#f42");
 })
 })(jQuery);
