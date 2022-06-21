@@ -112,4 +112,12 @@
   }
   setPerc(80,"#f42");
 })
+
+$(".sidebar>ul>li>a").click(function(){
+
+
+$("#menuicon").prop("checked", false);
+console.log($("#menuicon"));
+});
+
 })(jQuery);

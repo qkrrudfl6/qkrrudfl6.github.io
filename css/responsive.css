@@ -18,7 +18,31 @@
   }
 
   .navBox{top:0}
- 
+
+/* 햄버거 메뉴--------------------------------------------------------------------- */
+  input[id="menuicon"]{visibility: hidden;}
+  input[id="menuicon"]+label{display:block; width:40px; height:30px; position:fixed; z-index:3; right:10px; cursor:pointer;}
+  input[id="menuicon"]+label span{display:block; position:absolute; width:100%; height:5px; border-radius:30px; background:#888; transition:all .35s;}
+  /* 햄버거 */
+  input[id="menuicon"]+label span:nth-child(1){top:0}
+  input[id="menuicon"]+label span:nth-child(2){top:50%; transform:translateY(-50%);}
+  input[id="menuicon"]+label span:nth-child(3){bottom:0;}
+  
+  /* x자 만들기 */
+  input[id="menuicon"]:checked + label span:nth-child(1){top:50%; transform:translateY(-50%) rotate(45deg);background:#eee;}
+  input[id="menuicon"]:checked + label span:nth-child(2){opacity:0;}
+  input[id="menuicon"]:checked + label span:nth-child(3){ top:50%; transform:translateY(-50%) rotate(-45deg);background:#eee;}
+  
+  div[class="sidebar"]{display: block; width:100%; height:100%; background:rgba(0,0,0,0.8); position:fixed; top:0; right:-100%; z-index:1; transition:all .35s;}
+
+  input[id="menuicon"]:checked + label + div.sidebar {right:0;}
+
+  .side_nav{display:flex; flex-direction: column; justify-content: space-evenly; align-items: center;  width:100%; height:100%;}
+  .side_nav>li{height:10%; font-size: 4em;}
+  .side_nav>li>a{color:#eee;}
+  .side_nav>li>a:hover{color:rgb(255, 190, 120);}
+
+
   #resume_area{padding:20px 10px;}
  
   .profile{width:100%; height:auto; box-sizing: border-box; padding-bottom:80px; font-size: 1em; }
