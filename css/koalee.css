@@ -93,14 +93,14 @@ main h3{font-size:2em; color:#777; margin-bottom:7vw; border-bottom: rgb(255, 19
 .tab_btn2>ul>li{width:30%; height:100%; border-radius:2em; background-color: rgb(255, 190, 120);}
 .tab_btn2>ul>li>a{display:block; display:flex; justify-content: center; align-items: center; width:100%; height:100%;}
 
-.tab_btn2>ul>li>a>span{font-size: 1.5vw; font-weight: bold;}
+.tab_btn2>ul>li>a>span{font-size: 1.3vw; font-weight: bold;}
 .tab_btn2>ul>li>a:hover{color:#333;}
 .tab_btn2 li.active a{color:#333;}
 
 .tab_con2{width:75%; height:500px; margin:auto;  box-sizing: border-box; padding-top:40px;}
 .koBox{width:100%; height:500px;}
-.daBox{width:100%; height:500px; }
-.loBox{width:100%; height:500px; background-color: rgb(122, 26, 122);}
+.daBox{width:100%; height:500px;}
+.miBox{width:100%; height:500px;}
 
 
 
